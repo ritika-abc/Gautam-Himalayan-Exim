@@ -13,6 +13,10 @@
      opacity: 1;
  }
 
+ .rounded{
+    border-radius: 10px !important;
+
+ }
  .back-to-top {
     position: fixed;
     right: 30px;
@@ -495,3 +499,11 @@
 }
 /*** Footer End ***/
 
+
+.bg3{
+    background-image: url(../image/1.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-attachment: fixed;
+}
