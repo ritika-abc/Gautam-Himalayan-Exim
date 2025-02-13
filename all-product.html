@@ -18,7 +18,7 @@
     <!-- Icon Font Stylesheet -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Libraries Stylesheet -->
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -26,13 +26,19 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        body{
+            width: 100%;
+            overflow-x: hidden;
+        }
+        .bor{
+            border-left: 3px solid #f1c21b;
+        }
+    </style>
 </head>
 
 <body>
@@ -69,12 +75,12 @@
                 <a href="index.html" class="navbar-brand"><img src="image/logo/logo-png.png" alt=""></a>
                 <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars text-primary"></span>
+                    <span class="fa fa-bars text-seconday"></span>
                 </button>
                 <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                     <div class="navbar-nav mx-auto">
                         <a href="index.html" class="nav-item nav-link ">Home</a>
-                        <a href="about.html" class="nav-item nav-link active">About Us</a>
+                        <a href="about.html" class="nav-item nav-link ">About Us</a>
                         <!-- <a href="shop-detail.html" class="nav-item nav-link">Shop Detail</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
@@ -85,13 +91,13 @@
                                 <a href="404.html" class="dropdown-item">404 Page</a>
                             </div>
                         </div> -->
-                        <a href="all-product.html" class="nav-item nav-link  ">Our Products</a>
+                        <a href="all-product.html" class="nav-item nav-link active">Our Products</a>
                         <a href="service.html" class="nav-item nav-link">Our Services</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <!-- <div class="d-flex m-3 me-0">
                         <button
-                            class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4"
+                            class="btn-search btn bor bor-secondary btn-md-square rounded-circle bg-white me-4"
                             data-bs-toggle="modal" data-bs-target="#searchModal"><i
                                 class="fas fa-search text-primary"></i></button>
                         <a href="#" class="position-relative me-4 my-auto">
@@ -114,18 +120,19 @@
 
     <style>
         .abo {
-            background-image: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(image/banner/export.jpg);
+            background-image: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(image/banner/product.jpg);
             background-size: cover;
-            background-position: center;
             /* background-attachment: fixed; */
             height: 400px;
             width: 100%;
         }
-        .fff{
-float: right;
+
+        .fff {
+            float: right;
         }
+
         @media screen and (max-width:576px) {
-            .fff{
+            .fff {
                 width: 100%;
                 float: none;
                 clear: both;
@@ -136,82 +143,145 @@ float: right;
         <div class="abo"></div>
     </div>
     <!-- about us -->
-    <section style="margin: 4rem 0rem;">
+
+
+    <section class="my-5">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="content_about">
-                        <h3>We Are <b class="text-danger"> 😎 Gautam Himalayan Exim</b></h3>
-                        <b class="mb-3 text-dark"><q><i>Bringing the Best of the Himalayas to You! </i></q></b>
-                        <p class="mt-3">At Gautam Himalayan Exim, we take pride in being your trusted partner for the finest fruits directly sourced from the pristine Himalayan regions. Our mission is simple – to deliver fresh, premium-quality fruits that embody the purity and natural goodness of the Himalayas. With a farm-to-table approach, we ensure every apple, pomegranate, persimmon, kiwi, plum, and pear is handpicked, packed with care, and delivered to you at its peak freshness. We’re not just about supplying fruits, we’re about offering an experience – one that reflects our commitment to quality, sustainability, and customer satisfaction. Whether you’re a retailer, distributor, or simply a fruit lover, Gautam Himalayan Exim is here to provide you with the very best, every time.
-
-                        <h5 class="my-3 fw-bold">Our Expertise</h5>
-                        <p>At Gautam Himalayan Exim, our expertise lies in providing high-quality, fresh fruits sourced directly from the pristine Himalayan regions. With years of experience in sourcing, packaging, and exporting premium produce, we have developed a deep understanding of the agricultural practices that make our fruits stand out in both taste and quality.Our fruits are carefully selected from the fertile soils of Himachal Pradesh, where the climate and natural environment create the perfect conditions for growing premium varieties. We partner with local farmers who use sustainable farming methods to cultivate our fruits, ensuring that each batch meets international standards.We take pride in maintaining the highest quality control throughout the entire process — from the farm to the export market. Our team ensures that every fruit is handpicked, sorted, and inspected to meet rigorous quality standards, providing only the best to our customers.With a strong presence in the global market, we have fine-tuned our export processes to ensure timely deliveries of fresh produce worldwide. Our streamlined logistics and packaging solutions ensure that the fruits retain their freshness and quality, no matter the distance.</p>
-                        <img src="image/product/1.jpg" class="rounded m-3  fff " height="auto" width="50%" alt="">
-
-                        <h5 class="my-3 fw-bold">Global Reach , Local Roots</h5>
-                        <p>At Gautam Himalayan Exim, we proudly blend our local roots with a global reach. While we are deeply connected to the land and communities of Himachal Pradesh, our premium fruits are enjoyed by customers around the world.Our expertise in sourcing the finest Himalayan-grown produce, combined with our commitment to sustainable practices, has enabled us to expand our reach globally. Whether you're in North America, Europe, the Middle East, or Asia, we ensure that the freshness, taste, and quality of our fruits are consistently delivered to you.By working closely with local farmers, we support the community and maintain the authentic, natural farming methods that make our products unique. Our global expansion doesn’t just mean wider distribution; it means bringing the purity of the Himalayas to every corner of the world, while keeping our strong local ties intact.</p>
-
-                        
-
-
-                        <hr>
-                        <h6><img src="images/icons8-goal.gif" alt=""> Our Mission </h6>
-                        <p>At Gautam Himalayan Exim, our mission is to deliver the finest, freshest fruits from the pristine Himalayan regions to customers around the globe. We are committed to providing high-quality, sustainably grown produce that brings the natural goodness of the Himalayas straight to your table.
-
-                            Our goal is to create lasting relationships with both our customers and local farmers by offering exceptional products while promoting sustainable farming practices. We strive to ensure that every fruit we deliver is harvested at its peak, carefully packed, and transported to retain its natural flavor and nutritional value.</p>
-
-                        <h6><img src="images/icons8-eye.gif" alt=""> Our Vision </h6>
-                        <p>At Gautam Himalayan Exim, our vision is to become a leading global supplier of premium-quality, sustainably grown Himalayan fruits, known for our commitment to freshness, quality, and customer satisfaction. We aspire to introduce the world to the unparalleled flavors and health benefits of Himalayan-grown produce, while ensuring that our farming practices protect the environment and support local communities.We aim to expand our reach worldwide, delivering the purity and goodness of the Himalayas to every corner of the globe. Through innovation, dedication, and a focus on sustainability, we envision a future where Gautam Himalayan Exim is synonymous with excellence in fruit supply, connecting people to nature’s finest harvests for years to come.
-
-                        </p>
-
-                        <!-- <a href="certificate.php" class="btn btn-primary px-3">View Our Certificate</a> -->
+            <div class="row justify-content-center">
+                <div class="col-lg-11 " data-aos="fade-right">
+                    <div class="row my-3 bor  rounded shadow-lg">
+                        <div class="col-lg-4 align-self-center my-3">
+                            <img src="image/product/1.jpg" class="rounded shadow-lg" style="object-fit: cover;" height="300px" width="100%" alt="">
+                        </div>
+                        <div class="col-lg-8 my-3">
+                            <h3 class="mb-2 text-primary  ">Premium Himalayan   Apples</h3>
+                            <hr>
+                            <p class="jus">Our premium apples, sourced from the pristine valleys of the Himalayas, offer a perfect blend of sweetness and crispness. These apples are handpicked at their peak of ripeness, ensuring high quality and flavor. Rich in vitamins and antioxidants, they’re perfect for snacking or adding to your favorite recipes. Enjoy the natural freshness with every bite!</p>
+                            <h6>Key Benefits:</h6>
+                            <ul>
+                                <li>Rich in fiber and vitamins</li>
+                                <li>Boosts immunity and digestive health</li>
+                                <li>Naturally sweet and crisp</li>
+                            </ul>
+                            <a href="" class="btn btn-dark px-3 my-3">Enquiry Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center" data-aos="fade-left">
+                <div class="col-lg-11 ">
+                    <div class="row my-3 bor  rounded shadow-lg">
+                        <div class="col-lg-4 align-self-center my-3">
+                            <img src="image/product/2.jpg" class="rounded shadow-lg" style="object-fit: cover;" height="300px" width="100%" alt="">
+                        </div>
+                        <div class="col-lg-8 my-3">
+                            <h3 class="mb-2 text-primary  ">Organic Himalayan Pomegranates</h3>
+                            <hr>
+                            <p class="jus">Grown in the nutrient-rich soil of the Himalayas, our pomegranates are bursting with flavor and health benefits. Known for their antioxidant properties, they are a perfect addition to a healthy diet. Enjoy the sweet, tangy taste of handpicked, perfectly ripe pomegranates. Whether eaten fresh or juiced, they provide a refreshing and nutritious experience.</p>
+                            <h6>Key Benefits:</h6>
+                            <ul>
+                                <li>High in antioxidants</li>
+                                <li>Supports heart health</li>
+                                <li>Great source of vitamin C</li>
+                            </ul>
+                            <a href="" class="btn btn-dark px-3 my-3">Enquiry Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center " data-aos="fade-right">
+                <div class="col-lg-11 ">
+                    <div class="row my-3 bor  rounded shadow-lg">
+                        <div class="col-lg-4 align-self-center my-3">
+                            <img src="image/product/3.jpg" class="rounded shadow-lg" style="object-fit: cover;" height="300px" width="100%" alt="">
+                        </div>
+                        <div class="col-lg-8 my-3">
+                            <h3 class="mb-2 text-primary  ">Himalayan Persimmons</h3>
+                            <hr>
+                            <p class="jus">Our Himalayan persimmons are renowned for their sweet, honey-like flavor and vibrant color. These fruits are a natural source of vitamins A and C, which are essential for healthy skin and eyes. Soft and delicious, they can be enjoyed fresh, dried, or added to salads and desserts. Experience the authentic taste of the Himalayas in every bite!</p>
+                            <h6>Key Benefits:</h6>
+                            <ul>
+                                <li>Rich in dietary fiber</li>
+                                <li>Excellent for skin and eye health</li>
+                                <li>High in antioxidants</li>
+                            </ul>
+                            <a href="" class="btn btn-dark px-3 my-3">Enquiry Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center" data-aos="fade-left">
+                <div class="col-lg-11 ">
+                    <div class="row my-3 bor  rounded shadow-lg">
+                        <div class="col-lg-4 align-self-center my-3">
+                            <img src="image/product/4.jpg" class="rounded shadow-lg" style="object-fit: cover;" height="300px" width="100%" alt="">
+                        </div>
+                        <div class="col-lg-8 my-3">
+                            <h3 class="mb-2 text-primary  "> Fresh Himalayan Kiwis</h3>
+                            <hr>
+                            <p class="jus">Harvested from the Himalayan foothills, our kiwis are packed with flavor and nutrients. Their bright green flesh and tiny black seeds offer a deliciously tangy taste that is a perfect addition to any fruit salad, smoothie, or dessert. Kiwis are also known for their high vitamin C content, which helps in boosting the immune system.</p>
+                            <h6>Key Benefits:</h6>
+                            <ul>
+                                <li>High in Vitamin C</li>
+                                <li>Aids in digestion</li>
+                                <li>Supports heart health</li>
+                            </ul>
+                            <a href="" class="btn btn-dark px-3 my-3">Enquiry Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center" data-aos="fade-right">
+                <div class="col-lg-11 ">
+                    <div class="row my-3 bor  rounded shadow-lg">
+                        <div class="col-lg-4 align-self-center my-3">
+                            <img src="image/product/5.jpg" class="rounded shadow-lg" style="object-fit: cover;" height="300px" width="100%" alt="">
+                        </div>
+                        <div class="col-lg-8 my-3">
+                            <h3 class="mb-2 text-primary  "> Himalayan Fresh  Plums</h3>
+                            <hr>
+                            <p class="jus">Our plums come straight from the fertile lands of the Himalayas. With their juicy, sweet, and tart flavor, these plums are a treat for your taste buds. Packed with vitamins, antioxidants, and fiber, they’re a healthy snack option that can be enjoyed fresh or incorporated into baked goods, jams, or salads.</p>
+                            <h6>Key Benefits:</h6>
+                            <ul>
+                                <li>High in fiber</li>
+                                <li>Supports digestive health</li>
+                                <li>Rich in antioxidants</li>
+                            </ul>
+                            <a href="" class="btn btn-dark px-3 my-3">Enquiry Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center" data-aos="fade-left">
+                <div class="col-lg-11 ">
+                    <div class="row my-3 bor  rounded shadow-lg">
+                        <div class="col-lg-4 align-self-center my-3">
+                            <img src="image/product/6.jpg" class="rounded shadow-lg" style="object-fit: cover;" height="300px" width="100%" alt="">
+                        </div>
+                        <div class="col-lg-8 my-3">
+                            <h3 class="mb-2 text-primary  "> Himalayan Fresh  Pears</h3>
+                            <hr>
+                            <p class="jus">Our Himalayan pears are renowned for their crisp texture and juicy sweetness. Grown in the cool climate of the Himalayas, these pears offer a refreshing and flavorful experience with every bite. Rich in dietary fiber and vitamins, they’re a healthy addition to any meal or snack. Enjoy the pure taste of Himalayan pears!</p>
+                            <h6>Key Benefits:</h6>
+                            <ul>
+                                <li>Good source of fiber and Vitamin C</li>
+                                <li>Supports hydration and digestion</li>
+                                <li>Sweet, juicy, and refreshing flavor</li>
+                            </ul>
+                            <a href="" class="btn btn-dark px-3 my-3">Enquiry Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Features Start -->
-    <style>
-        .feature1 {
-            background-image: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(image/ativment.jpg);
-            background-size: cover;
-            background-attachment: fixed;
-        }
-    </style>
 
-    <!-- Features End -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8">
-                <table class="table table-hover table-bordered">
-                    <tr>
-                        <th>Company Name</th>
-                        <td>Gautam Himalayan Exim</td>
-                    </tr>
-                    <tr>
-                        <th>CEO</th>
-                        <td>Ashish Sharma</td>
-                    </tr>
-                    <tr>
-                        <th>Year of Establishment</th>
-                        <td>2025</td>
-                    </tr>
-                     
-                    <tr>
-                        <th>Company Address</th>
-                        <td>  Himachal (Kullu)</td>
-                    </tr>
-                    <tr>
-                        <th>Contact Number</th>
-                        <td><a href="tel:+918148800009" class="text-danger">+91   8148800009</a> </a></td>
-                    </tr>
-                    
-                </table>
-            </div>
-        </div>
-    </div>
+
+
+
+
+
+
 
 
 
@@ -300,7 +370,7 @@ float: right;
                             Himalayan Exim</a>, All right reserved.</span>
                 </div>
                 <div class="col-md-6 my-auto text-center text-md-end text-white">
-                    
+
                     Designed By <a class="border-bottom" href="https://web2export.com">web2export.com</a>
                 </div>
             </div>
@@ -308,13 +378,16 @@ float: right;
     </div>
     <!-- Copyright End -->
 
-
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i
             class="fa fa-arrow-up"></i></a>
-
-
+   <script>
+                AOS.init();
+              </script>
+         
+         
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
