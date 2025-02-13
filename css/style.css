@@ -507,3 +507,6 @@
     background-size: contain;
     background-attachment: fixed;
 }
+.navbar{
+    z-index: 20 !important;
+}
